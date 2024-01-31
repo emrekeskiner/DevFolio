@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
     public class ServiceController : Controller
     {
         // GET: Service
-        public ActionResult Index()
+        public ActionResult ServiceList()
         {
             return View();
         }

@@ -9,7 +9,12 @@ namespace DevFolio.Controllers
     public class ProjectController : Controller
     {
         // GET: Project
-        public ActionResult Index()
+        public ActionResult ProjectList()
+        {
+            return View();
+        }
+
+        public ActionResult CreateProject()
         {
             return View();
         }
