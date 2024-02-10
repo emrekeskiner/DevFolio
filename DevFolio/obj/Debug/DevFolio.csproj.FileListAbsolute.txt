@@ -51,6 +51,8 @@ C:\Users\asus\source\repos\DevFolio\DevFolio\bin\roslyn\vbc.rsp
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\roslyn\VBCSCompiler.exe
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Antlr3.Runtime.dll
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.dll
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.SqlServer.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Newtonsoft.Json.dll
@@ -62,6 +64,8 @@ C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.WebPages.Deployment.
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.WebPages.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.WebPages.Razor.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\WebGrease.dll
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.xml
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.SqlServer.xml
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.Helpers.xml
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.Mvc.xml
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.Optimization.xml
@@ -72,12 +76,7 @@ C:\Users\asus\source\repos\DevFolio\DevFolio\bin\System.Web.WebPages.Razor.xml
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Newtonsoft.Json.xml
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Antlr3.Runtime.pdb
 C:\Users\asus\source\repos\DevFolio\DevFolio\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.AssemblyReference.cache
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.CoreCompileInputs.cache
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.CopyComplete
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.pdb
-C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.dll
-C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.SqlServer.dll
-C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.xml
-C:\Users\asus\source\repos\DevFolio\DevFolio\bin\EntityFramework.SqlServer.xml
