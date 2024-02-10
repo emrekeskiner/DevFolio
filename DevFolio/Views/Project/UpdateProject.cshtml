@@ -1,0 +1,32 @@
+﻿@model DevFolio.Models.TblProject
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Proje Güncelle</h2>
+
+<br />
+<div class="container">
+
+    @using (Html.BeginForm("UpdateProject", "Project", FormMethod.Post))
+    {
+        <form class="form-group" method="post">
+            <label>Proje Başlık</label>
+            @Html.HiddenFor(x=>x.ProjectID)
+            @Html.HiddenFor(x=>x.CreatedDate)
+            @Html.TextBoxFor(x => x.ProjectTitle, new { @class = "form-control" })
+            <br />
+            <label>Proje Kategorisi</label>
+            @Html.DropDownListFor(m => m.TblCategory.CategoryID, (List<SelectListItem>)ViewBag.category, new { @class = "form-control" })
+            <br />
+            <label>Proje Resim</label>
+            @Html.TextBoxFor(x => x.CoverImageUrl, new { @class = "form-control" })
+            <br />
+
+            <button class="btn btn-primary">Güncelle</button>
+        </form>
+
+    }
+
+</div>

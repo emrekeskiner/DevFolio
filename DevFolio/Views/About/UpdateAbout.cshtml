@@ -1,0 +1,26 @@
+﻿@model DevFolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Hakkımda Güncelle</h2>
+
+<br />
+<div class="container">
+
+        @using (Html.BeginForm("UpdateAbout", "About", FormMethod.Post))
+        {
+            <form class="form-group" method="post">
+                <label>Açıklama</label>
+                @Html.HiddenFor(x=>x.AboutID)
+                @Html.TextAreaFor(x => x.Description, new { @class = "form-control", rows = 6 })
+                <br />
+
+
+                <button class="btn btn-primary">Güncelle</button>
+            </form>
+
+        }
+   
+</div>

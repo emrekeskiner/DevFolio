@@ -1,30 +1,53 @@
-﻿
+﻿@model List<DevFolio.Models.TblContact>
 @{
-    Layout = null;
+    ViewBag.Title = "MessageList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+<h2>Mesaj Listesi</h2>
+
 <div class="container">
+    
+    <br />
     <table class="table table-bordered">
-        <tr>
-            <th>Mesaj No</th>
+        <tr class="table-secondary">
+            <th>#</th>
             <th>Gönderen</th>
+            <th>E-Mail</th>
             <th>Konu</th>
+            <th>Tarih</th>
+            <th>Durum</th>
             <th>Mesajı Aç</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Murat Sağlam</td>
-            <td>Teşekkür</td>
-            <td><a href="#" class="btn btn-warning">Mesajı Aç</a></td>
-            
-           
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Kemal Kibar</td>
-            <td>Şikayet</td>
-            <td><a href="#" class="btn btn-warning">Mesajı Aç</a></td>
-        </tr>
+
+        @foreach (var item in Model)
+        {
+            string durum = "";
+            string deger = "";
+            if (item.IsRead == false)
+            {
+                durum = "bg-danger";
+                deger = "Okunmadı";
+            }
+            else
+            {
+                durum = "bg-secondary";
+                deger = "Okundu";
+            }
+
+            <tr>
+                <td>@item.ContactID</td>
+                <td>@item.NameSurname</td>
+                <td>@item.Email</td>
+                <td>@item.Subject</td>
+                <td>@(((DateTime)item.SendMessageDate).ToString("dd.MM.yyyy"))</td>
+                <td><span class="badge @durum" style="color:white">@deger</span></td>
+                <td><a href="/Contact/ReadMessage/@item.ContactID" class="btn btn-success">Mesaj Detay</a></td>
+               
+            </tr>
+        }
+
 
     </table>
 </div>

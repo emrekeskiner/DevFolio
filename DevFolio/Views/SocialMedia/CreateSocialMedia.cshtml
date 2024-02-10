@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Sosyal Medya Oluştur</h2>
+
+<br />
+<div class="container">
+    <form method="post" action="/SocialMedia/CreateSocialMedia/">
+        <br />
+        <label>Platform Adı</label>
+        <input type="text" name="PlatformName" class="form-control" />
+        <br />
+        <label>Simge Adresi</label>
+        <input type="text" name="IconUrl" class="form-control" />
+        <br />
+        <label>Hesap Adresi</label>
+        <input type="text" name="RedirectUrl" class="form-control" />
+        <br />
+
+        <button class="btn btn-primary">Kaydet</button>
+    </form>
+</div>

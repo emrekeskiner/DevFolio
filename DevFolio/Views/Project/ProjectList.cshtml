@@ -1,37 +1,43 @@
-﻿
+﻿@model List<DevFolio.Models.TblProject>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "ProjectList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Projeler Listesi</h2>
+<h2>Proje Listesi</h2>
 
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Proje Başlığı</th>
-        <th>Kategori</th>
-        <th>Github'da Aç</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Crm Yazılımı</td>
-        <td>Masaüstü Uygulama</td>
-        <td><a href="#" class="btn btn-warning">Github'da Aç</a></td>
+<div class="container">
+    <a href="/Project/CreateProject/" class="btn btn-info">Yeni Proje</a>
+    <br />
+    <br />
+
+    <table class="table table-bordered">
+        <tr class="table-secondary">
+            <th>#</th>
+            <th>Proje Başlık</th>
+            <th>Proje Resim</th>
+            <th>Proje Tarihi</th>
+            <th>Kategori</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
 
 
-    </tr>
     <tr>
-        <td>2</td>
-        <td>TodoList App</td>
-        <td>Mobil Uygulama</td>
-        <td><a href="#" class="btn btn-warning">Github'da Aç</a></td>
+        <td>@item.ProjectID</td>
+        <td>@item.ProjectTitle</td>
+        <td>@item.CoverImageUrl</td>
+        <td>@(((DateTime)item.CreatedDate).ToString("dd.MM.yyyy"))</td>
+       
+        <td>@item.TblCategory.CategoryName</td>
+        <td><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-warning">Sil</a></td>
+        <td><a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-success">Güncelle</a></td>
     </tr>
-    <tr>
-        <td>3</td>
-        <td>Büyük Veri Analizi</td>
-        <td>Makine Öğrenmesi</td>
-        <td><a href="#" class="btn btn-warning">Github'da Aç</a></td>
-    </tr>
+        }
 
-</table>
+
+    </table>
+</div>

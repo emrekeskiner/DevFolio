@@ -1,0 +1,35 @@
+﻿@model DevFolio.Models.TblAddress
+@{
+    ViewBag.Title = "UpdateAddress";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Adres Güncelle</h2>
+
+<br />
+<div class="container">
+
+    @using (Html.BeginForm("UpdateAddress", "Address", FormMethod.Post))
+    {
+        <form class="form-group" method="post">
+            <label>Açıklama</label>
+            @Html.HiddenFor(x => x.AddressID)
+            @Html.TextAreaFor(x => x.Description, new { @class = "form-control", rows=2 })
+            <br />
+            <label>Adres</label>
+            @Html.TextBoxFor(x => x.Location, new { @class = "form-control" })
+            <br />
+            <label>E-Mail</label>
+            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+            <br />
+
+            <label>Telefon</label>
+            @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+            <br />
+
+            <button class="btn btn-primary">Güncelle</button>
+        </form>
+
+    }
+</div>
+
