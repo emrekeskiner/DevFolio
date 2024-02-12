@@ -80,3 +80,4 @@ C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.CoreCompi
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.CopyComplete
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.pdb
+C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.AssemblyReference.cache
