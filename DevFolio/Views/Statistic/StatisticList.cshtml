@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "StatisticList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>İstatislik</h2>
+
+<div class="alert alert-danger">Kategori Sayısı : @ViewBag.categoryCount</div>
+<div class="alert alert-warning">Proje Sayısı : @ViewBag.projectCount</div>
+<div class="alert alert-success">Yetenek Sayısı : @ViewBag.skillCount</div>
+<div class="alert alert-dark">Ortalama Yetenek Puanı : @ViewBag.skillAvgValue</div>
+<div class="alert alert-primary">Son Eklenen Yetenek : @ViewBag.lastSkillTitleName</div>
+<div class="alert alert-info">Asp.Net Core Proje Sayısı : @ViewBag.coreCategoryProjectCount</div>
+

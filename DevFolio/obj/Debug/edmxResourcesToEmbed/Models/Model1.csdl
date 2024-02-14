@@ -151,5 +151,6 @@
       <End Role="TblCategory" EntitySet="TblCategory" />
       <End Role="TblProject" EntitySet="TblProject" />
     </AssociationSet>
+    <FunctionImport Name="GetLastSkillTitle" ReturnType="Collection(String)" />
   </EntityContainer>
 </Schema>

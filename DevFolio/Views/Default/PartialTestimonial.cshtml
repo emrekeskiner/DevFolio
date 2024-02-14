@@ -1,0 +1,17 @@
+﻿@model List<DevFolio.Models.TblTestimonial>
+
+@foreach (var item in Model)
+{
+    <div class="testimonial-box">
+        <div class="author-test">
+            <img src="@item.ImageUrl" alt="" class="rounded-circle b-shadow-a">
+            <span class="author">@item.NameSurname</span>
+        </div>
+        <div class="content-test">
+            <p class="description lead">
+                @item.Description
+            </p>
+            <span class="comit"><i class="fa fa-quote-right"></i></span>
+        </div>
+    </div>
+}
