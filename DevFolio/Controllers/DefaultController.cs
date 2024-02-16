@@ -76,5 +76,18 @@ namespace DevFolio.Controllers
             var values = db.TblSocialMedia.Where(x => x.Status == true).ToList();
             return PartialView(values);
         }
+
+        public PartialViewResult PartialProject()
+        {
+            var values = db.TblProject.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult PartialContact()
+        {
+            
+            return PartialView();
+        }
+
     }
 }

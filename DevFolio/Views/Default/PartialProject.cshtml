@@ -1,0 +1,29 @@
+﻿@model List<DevFolio.Models.TblProject>
+
+@foreach (var item in Model)
+{
+    <div class="col-md-4">
+        <div class="work-box">
+            <a href="@item.CoverImageUrl" data-lightbox="gallery-mf">
+                <div class="work-img">
+                    <img src="@item.CoverImageUrl" alt="@item.ProjectTitle" class="img-fluid">
+                </div>
+                <div class="work-content">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2 class="w-title">@item.ProjectTitle</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">@item.TblCategory.CategoryName</span> / <span class="w-date">@(((DateTime)item.CreatedDate).ToString("dd.MMM.yyyy"))</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="w-like">
+                                <span class="ion-ios-plus-outline"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+}

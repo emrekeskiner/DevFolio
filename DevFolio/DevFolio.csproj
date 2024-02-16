@@ -504,6 +504,8 @@
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
     <Content Include="Views\Default\PartialAddress.cshtml" />
     <Content Include="Views\Default\PartialSocialMedia.cshtml" />
+    <Content Include="Views\Default\PartialProject.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

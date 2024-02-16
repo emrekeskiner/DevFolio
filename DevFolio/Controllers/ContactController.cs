@@ -28,11 +28,22 @@ namespace DevFolio.Controllers
             return View(values);
         }
 
+        [HttpGet]
         public ActionResult SendMessage()
         {
             return View();
         }
 
-       
+        [HttpPost]
+        public ActionResult SendMessage(TblContact p)
+        {
+            p.IsRead = false;
+            p.SendMessageDate = DateTime.Now;
+            db.TblContact.Add(p);
+            db.SaveChanges();
+            return RedirectToAction("Index", "Default");
+        }
+
+
     }
 }
