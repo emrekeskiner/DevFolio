@@ -506,6 +506,7 @@
     <Content Include="Views\Default\PartialSocialMedia.cshtml" />
     <Content Include="Views\Default\PartialProject.cshtml" />
     <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialStatistic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

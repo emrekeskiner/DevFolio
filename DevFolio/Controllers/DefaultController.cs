@@ -85,9 +85,18 @@ namespace DevFolio.Controllers
 
         public PartialViewResult PartialContact()
         {
-            
+           
             return PartialView();
         }
 
+        public PartialViewResult PartialStatistic()
+        {
+            ViewBag.categoryCount = db.TblCategory.Count();
+            ViewBag.testimonialCount = db.TblTestimonial.Count();
+            ViewBag.projectCount = db.TblProject.Count();
+            ViewBag.ServiceCount = db.TblService.Count();
+
+            return PartialView();
+        }
     }
 }

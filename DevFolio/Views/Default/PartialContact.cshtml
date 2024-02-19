@@ -5,51 +5,47 @@
 <div class="col-md-6">
     <div class="title-box-2">
         <h5 class="title-left">
-            Bize Mesaj Gönder
+            Bize Mesaj Gönderin.
         </h5>
     </div>
     <div>
-        @using(Html.BeginForm("SendMessage","Contact", FormMethod.Post))
-            {
-
-            
-        <form method="post" role="form" class="contactForm">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <form method="post"  class="contactForm"  action="">
+            <div id="sendmessage">Mesajınız iletildi, teşekkürler.</div>
             <div id="errormessage"></div>
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        @Html.TextBoxFor(x => x.NameSurname, new {@class= "form-control", id = "name", placeholder = "Adınız Soyadınız"})
-                        
+                        <input type="text" name="NameSurname" class="form-control" id="name" placeholder="Adınız Soyadınız" data-rule="minlen:4" data-msg="Lütfen en az 4 karakter giriniz." />
                         <div class="validation"></div>
                     </div>
                 </div>
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        
-                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control", id = "email", placeholder = "Email Adresiniz" })
+                        <input type="email" class="form-control" name="Email" id="email" placeholder="E-mail Adresiniz" data-rule="email" data-msg="Lütfen doğru bir mail adresi giriniz." />
                         <div class="validation"></div>
                     </div>
                 </div>
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                       
-                        @Html.TextBoxFor(x => x.Subject, new { @class = "form-control", id = "subject", placeholder = "Lütfen Konuyu Yazınız." })
+                        <input type="text" class="form-control" name="Subject" id="subject" placeholder="Başlık" data-rule="minlen:8" data-msg="Lütfen en az 8 karakter giriniz." />
                         <div class="validation"></div>
                     </div>
                 </div>
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        
-                        @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = "5", placeholder = "Lütfen bize bir şeyler yazın" })
+                        <textarea class="form-control" name="Message" rows="5" data-rule="required" data-msg="Lütfen mesajınızı yazınız." placeholder="Mesaj"></textarea>
                         <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6LclxngpAAAAALzk1t4yQNcCArobbMsKb7vGKm_3"></div>
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <button class="button button-a button-big button-rouded">Gönder</button>
+                    <button type="submit" class="button button-a button-big button-rouded">Gönder</button>
                 </div>
             </div>
         </form>
-        }
     </div>
 </div>

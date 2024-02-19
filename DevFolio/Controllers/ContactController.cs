@@ -37,11 +37,20 @@ namespace DevFolio.Controllers
         [HttpPost]
         public ActionResult SendMessage(TblContact p)
         {
-            p.IsRead = false;
-            p.SendMessageDate = DateTime.Now;
-            db.TblContact.Add(p);
-            db.SaveChanges();
-            return RedirectToAction("Index", "Default");
+          
+                p.IsRead = false;
+                p.SendMessageDate = DateTime.Now;
+                db.TblContact.Add(p);
+            
+                db.SaveChanges();
+                return RedirectToAction("Index", "Default");
+           
+        }
+
+       public JsonResult Add(TblContact p)
+        {
+
+            return Json(SendMessage(p), JsonRequestBehavior.AllowGet); 
         }
 
 
