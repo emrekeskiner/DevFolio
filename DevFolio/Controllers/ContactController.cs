@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DevFolio.Models;
+//using PagedList;
+//using PagedList.Mvc;
 
 namespace DevFolio.Controllers
 {
@@ -13,8 +15,10 @@ namespace DevFolio.Controllers
 
         // GET: Contact
 
+        //public ActionResult MessageList(int page = 1)
         public ActionResult MessageList()
         {
+            //var values = db.TblContact.ToList().ToPagedList(page,10);
             var values = db.TblContact.ToList();
 
             return View(values);

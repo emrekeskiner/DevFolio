@@ -81,3 +81,7 @@ C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.CopyCompl
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.dll
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.pdb
 C:\Users\asus\source\repos\DevFolio\DevFolio\obj\Debug\DevFolio.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\PagedList.dll
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\PagedList.Mvc.dll
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\PagedList.xml
+C:\Users\asus\source\repos\DevFolio\DevFolio\bin\PagedList.Mvc.xml
