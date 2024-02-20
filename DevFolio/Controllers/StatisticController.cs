@@ -16,7 +16,7 @@ namespace DevFolio.Controllers
             ViewBag.categoryCount = db.TblCategory.Count();
             ViewBag.projectCount = db.TblProject.Count();
             ViewBag.skillCount = db.TblSkill.Count();
-            ViewBag.skillAvgValue = db.TblSkill.Average(x=> x.SkillValue);
+            ViewBag.skillAvgValue = ((int?)db.TblSkill.Average(x=> x.SkillValue));
             ViewBag.lastSkillTitleName = db.GetLastSkillTitle().FirstOrDefault();
             ViewBag.coreCategoryProjectCount = db.TblProject.Where(x => x.ProjectCategory == 1).Count();
 

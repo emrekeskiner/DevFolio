@@ -27,13 +27,13 @@ namespace DevFolio.Controllers
             db.SaveChanges();
             return View(values);
         }
-
+        [AllowAnonymous]
         [HttpGet]
         public ActionResult SendMessage()
         {
             return View();
         }
-
+        [AllowAnonymous]
         [HttpPost]
         public ActionResult SendMessage(TblContact p)
         {
@@ -46,7 +46,7 @@ namespace DevFolio.Controllers
                 return RedirectToAction("Index", "Default");
            
         }
-
+        [AllowAnonymous]
        public JsonResult Add(TblContact p)
         {
 

@@ -7,7 +7,7 @@ using DevFolio.Models;
 
 namespace DevFolio.Controllers
 {
-    
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         DbDevFolioEntities db = new DbDevFolioEntities();
