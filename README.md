@@ -5,13 +5,11 @@ M&Y Yazılım Eğitim Akademi Danışmanlıktan aldığım eğitim kapsamında g
 
 Proje iki ana kısımdan oluşmaktadır, bunlar kullanıcı arayüzü ve yönetici panelidir. 
 
-Yönetici panelinde; kullanıcı arayüzünde gösterilmek istenen tüm veriler eklenebilir, düzenelenebilir ve silinebilir.
+Yönetici panelinde; kullanıcı arayüzünde gösterilmek istenen tüm veriler eklenebilir, düzenelenebilir ve silinebilir, Sayfa üzerinde bulunan iletişim formundan gelen verileri okuyabilir. 
 
- Sayfa üzerinde bulunan iletişim formundan gelen verileri okuyabilir. 
+Yönetici paneli üzerinden eklenen tüm veriler kullanıcı arayüzünde listelenerek okunması sağlanmıştır.
 
-Yönetici paneli üzerinden eklenen veriler  tüm veriler kullanıcı arayüzünde listelenerek web sitesini ziyaret eden kullanıcıların inceleyebilir ve bloglara yorum yapabilirler.
-
-Kullanıcı arayüzünde bulunan iletişim bölümünden gönderilen veriler Ajax kullanılarak sayfa post edilmeden kayıt edilmektedir ayrıca google reCAPTCHA v2 ile otomatik mesaj gönderilmesi engellendi. Admin panelinde ise Jquery DataTable kullanılarak veriler üzerinde arama, listeleme ve dizme yapılabilmektedir.
+Kullanıcı arayüzünde bulunan iletişim bölümünden gönderilen veriler Ajax kullanılarak sayfa post edilmeden kayıt edilmektedir, ayrıca google reCAPTCHA v2 ile otomatik mesaj gönderilmesi engellenmiştir. Admin panelinde ise Jquery DataTable kullanılarak veriler üzerinde arama, listeleme ve dizme yapılabilmektedir.
 
 ## Kullandığım Teknolojiler
 
